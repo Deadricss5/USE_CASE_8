@@ -1,14 +1,14 @@
 export const formConfig = [
   {
     label: 'First Name',
-    placeholder: 'Please enter a  First Name',
+    placeholder: 'Please enter a First Name',
     type: 'text',
     id: 'firstName',
     errorMessage: 'First Name is a required field',
   },
   {
     label: 'Last Name',
-    placeholder: 'Please enter a  Last Name',
+    placeholder: 'Please enter a Last Name',
     type: 'text',
     id: 'lastName',
     errorMessage: 'Last Name is a required field',
