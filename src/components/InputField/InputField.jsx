@@ -1,7 +1,12 @@
 import React from 'react';
 import { string, func } from 'prop-types';
 
-import { Input, InputFieldWrapper, Error, Label } from './InputField.styles';
+import {
+  Input,
+  InputFieldWrapper,
+  ErrorMessage,
+  Label,
+} from './InputField.styles';
 
 export const InputField = (props) => {
   const { label, name, type, errorMessage, value, onChange, placeholder } =
@@ -19,7 +24,7 @@ export const InputField = (props) => {
         placeholder={placeholder}
         invalid={errorMessage}
       />
-      {errorMessage && <Error>{errorMessage}</Error>}
+      {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
     </InputFieldWrapper>
   );
 };

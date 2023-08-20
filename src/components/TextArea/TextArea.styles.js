@@ -20,7 +20,7 @@ export const StyledTextArea = styled.textarea`
     `}
 `;
 
-export const Error = styled.p`
+export const ErrorMessage = styled.p`
   color: red;
   font-size: 12px;
   font-style: italic;

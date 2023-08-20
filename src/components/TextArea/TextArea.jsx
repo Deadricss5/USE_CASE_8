@@ -4,7 +4,7 @@ import { string, func } from 'prop-types';
 import {
   StyledTextArea,
   TextAreaWrapper,
-  Error,
+  ErrorMessage,
   Label,
 } from './TextArea.styles';
 
@@ -26,7 +26,7 @@ export const TextArea = (props) => {
         placeholder={placeholder}
         invalid={errorMessage}
       />
-      {errorMessage && <Error>{errorMessage}</Error>}
+      {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
     </TextAreaWrapper>
   );
 };
