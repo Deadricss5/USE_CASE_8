@@ -17,6 +17,16 @@ export const UserForm = () => {
     dispatch(validateFormField(field));
   }, []);
 
+  const handleSubmit = () =>
+    alert(
+      [
+        `First Name: ${formData.firstName}`,
+        `Last Name: ${formData.lastName}`,
+        `Email: ${formData.email}`,
+        `Message: ${formData.message}`,
+      ].join('\n'),
+    );
+
   return (
     <Form>
       {formConfig.map(({ id, type, placeholder, label }) =>
@@ -44,7 +54,7 @@ export const UserForm = () => {
         ),
       )}
 
-      <button type="button" disabled={!isValid}>
+      <button onClick={handleSubmit} type="button" disabled={!isValid}>
         Submit
       </button>
     </Form>
